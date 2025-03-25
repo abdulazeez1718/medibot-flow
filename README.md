@@ -1,69 +1,178 @@
-# Welcome to your Lovable project
+<div align="center">
+  
+  # 🤖 MediBot Flow
 
-## Project info
+  <p align="center">
+    <img src="https://img.shields.io/badge/Built_with-React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React"/>
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+  </p>
 
-**URL**: https://lovable.dev/projects/3813f205-e437-4df4-a023-204c47cff11a
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=61DAFB&center=true&vCenter=true&width=435&lines=Modern+Medical+Assistant;Interactive+UI;Powered+by+AI" alt="Typing SVG" />
+  </a>
 
-## How can I edit this code?
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd5Z2k4ZnR0OWFxbXd1aWx6YnB0NmRxbWxqbWF2NnQyOWxqcWx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqmupuTVZYaQX5s094/giphy.gif" width="400"/>
+</div>
 
-There are several ways of editing your application.
+## 🌟 Overview
 
-**Use Lovable**
+MediBot Flow is a modern medical assistant application built with cutting-edge technologies. It provides an intuitive interface for medical consultations, appointment management, and health information access.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3813f205-e437-4df4-a023-204c47cff11a) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🏥 **Virtual Medical Consultations**
+  - Real-time chat with AI medical assistant
+  - Symptom analysis and preliminary diagnosis
+  - Medical history tracking
 
-**Use your preferred IDE**
+- 📅 **Appointment Management**
+  - Easy scheduling system
+  - Reminder notifications
+  - Calendar integration
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 💊 **Medication Tracking**
+  - Prescription management
+  - Medication reminders
+  - Drug interaction warnings
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 📊 **Health Analytics**
+  - Personal health dashboard
+  - Progress tracking
+  - Health insights
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/><br>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/><br>
+        <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/shadcn_ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" alt="shadcn-ui"/><br>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
+      </td>
+    </tr>
+  </table>
+</div>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Quick Start
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Installation
+
+1. **Clone the Repository**
+```bash
+git clone https://github.com/abdulazeez1718/medibot-flow.git
+cd medibot-flow
 ```
 
-**Edit a file directly in GitHub**
+2. **Install Dependencies**
+```bash
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. **Set Up Environment Variables**
+```bash
+cp .env.example .env
+```
+Edit `.env` with your configuration:
+```env
+VITE_API_URL=your_api_url
+VITE_API_KEY=your_api_key
+```
 
-**Use GitHub Codespaces**
+4. **Start Development Server**
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Visit `http://localhost:5173` to see your app running!
 
-## What technologies are used for this project?
+## 📝 Project Structure
 
-This project is built with .
+```
+medibot-flow/
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/          # Application pages
+│   ├── hooks/          # Custom React hooks
+│   ├── services/       # API services
+│   ├── utils/          # Utility functions
+│   ├── types/          # TypeScript types
+│   └── App.tsx         # Root component
+├── public/             # Static assets
+├── tailwind.config.js  # Tailwind CSS configuration
+├── vite.config.ts      # Vite configuration
+└── package.json        # Project dependencies
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔧 Available Scripts
 
-## How can I deploy this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run test` - Run tests
 
-Simply open [Lovable](https://lovable.dev/projects/3813f205-e437-4df4-a023-204c47cff11a) and click on Share -> Publish.
+## 🌐 Deployment
 
-## I want to use a custom domain - is that possible?
+### Build for Production
+```bash
+npm run build
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+### Deploy to Netlify
+1. Connect your GitHub repository to Netlify
+2. Configure build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. Deploy!
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+Abdulaziz - [LinkedIn](https://www.linkedin.com/in/abdulazeez-kimsanbayev-67a842255) - abdulazizkimsanbayev1718@gmail.com
+
+Project Link: [https://github.com/abdulazeez1718/medibot-flow](https://github.com/abdulazeez1718/medibot-flow)
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
+</div>
