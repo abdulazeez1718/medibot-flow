@@ -22,31 +22,22 @@ export type ChatContextType = {
   setIsPremium: (premium: boolean) => void;
 };
 
+// This is where you should replace "your-openai-api-key" with your actual OpenAI API key
+const DEFAULT_API_KEY = "your-openai-api-key";
+
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
 
 export const ChatProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [messages, setMessages] = useState<MessageType[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [apiKey, setApiKey] = useState('');
+  const [apiKey, setApiKey] = useState(DEFAULT_API_KEY);
   const [isPremium, setIsPremium] = useState(false);
   
-  // Load API key from localStorage
+  // Load premium status from localStorage
   useEffect(() => {
-    const storedApiKey = localStorage.getItem('openai-api-key');
-    if (storedApiKey) {
-      setApiKey(storedApiKey);
-    }
-    
     const premium = localStorage.getItem('is-premium') === 'true';
     setIsPremium(premium);
   }, []);
-  
-  // Save API key to localStorage when it changes
-  useEffect(() => {
-    if (apiKey) {
-      localStorage.setItem('openai-api-key', apiKey);
-    }
-  }, [apiKey]);
   
   // Save premium status to localStorage
   useEffect(() => {
