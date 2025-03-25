@@ -1,6 +1,5 @@
-
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Sparkles, Image as ImageIcon, RefreshCw, Trash, Brain, Heart, Lungs, Activity } from 'lucide-react';
+import { Send, Sparkles, Image as ImageIcon, RefreshCw, Trash, Brain, Heart, Activity } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useChat } from '@/context/ChatContext';
@@ -163,8 +162,8 @@ const ChatInterface: React.FC = () => {
     return [
       <Brain size={24} className="text-medical" key="brain" />,
       <Heart size={24} className="text-medical" key="heart" />,
-      <Lungs size={24} className="text-medical" key="lungs" />,
-      <Activity size={24} className="text-medical" key="activity" />
+      <Activity size={24} className="text-medical" key="activity" />,
+      <Activity size={24} className="text-medical" key="activity2" />
     ];
   };
 
@@ -190,7 +189,7 @@ const ChatInterface: React.FC = () => {
                 { icon: <Heart className="mr-2 h-4 w-4" />, text: "Explain the cardiovascular system" },
                 { icon: <Activity className="mr-2 h-4 w-4" />, text: "What is heart failure pathophysiology?" },
                 { icon: <Brain className="mr-2 h-4 w-4" />, text: "Explain the Glasgow Coma Scale" },
-                { icon: <Lungs className="mr-2 h-4 w-4" />, text: "How does the respiratory system work?" }
+                { icon: <Activity className="mr-2 h-4 w-4" />, text: "How does the respiratory system work?" }
               ].map((suggestion, i) => (
                 <Button
                   key={i}
@@ -345,3 +344,4 @@ const ChatInterface: React.FC = () => {
 };
 
 export default ChatInterface;
+
